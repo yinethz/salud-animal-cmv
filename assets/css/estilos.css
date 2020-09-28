@@ -1,0 +1,147 @@
+html,body{
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Grandstander', cursive;
+
+}
+.banner{
+    height: 75vh;
+    background: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    display: flex;
+    align-items: flex-end; /*centrar de manera vertical el título "flex-end para ponerlo abajo"*/
+    padding-bottom: 3%;
+}
+.banner h1{
+    font-size: 70px;
+    margin: 0px;
+}
+.banner p{
+    font-size: 24px; 
+}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+}
+
+.section .section-article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.section .section-article .card{
+    width: 22em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    position: relative;    
+  }
+
+.card .fas{
+    position: relative;
+    font-size: 2.5em;
+    text-align: center;
+    color: #2A4494;
+    z-index: 1;
+    background-color: #ffff;
+    min-width: 1.5em;
+  }
+.card-body{
+    position: relative;    
+    border: 2px solid #4CB5AE;
+    border-radius: 1em;
+    top: -0.8em;
+    padding: 1.5%;
+}
+.container-about{
+    background-color: #e2dcde;
+    padding-top: 8px;
+}
+.container-about .section.article .about{
+    display: flex;
+}
+.about{
+    text-align: center;
+    max-width: 30%;
+    min-width: 250px;
+    margin: 5px;
+    justify-content: space-evenly;    
+}
+.imagen{
+    max-width: 15em;
+    max-height: 10em;
+  	min-width: 8em;
+    min-height: 5em;
+    border-radius: 15em;
+}
+.cargo{
+    font-weight:600;
+     letter-spacing: 0.5px;
+     text-align: center;
+}
+.texto{
+    text-align: justify;
+}
+.redes{
+    position: fixed; /*flotante*/
+    bottom: 50px;
+    right: 1px;
+    z-index: 1; /*sobre todos los elementos hermanos*/
+}
+.redes ul li{
+    list-style: none;
+    font-size: 2.5em;
+}
+.redes .fab.fa-whatsapp{
+    color:  #32de8a;
+}
+
+
+@media(max-width:900px){
+    body{
+        font-size: 20px;
+    }
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1.8em;
+    }
+}
+@media(max-width:600px){
+    body{
+        font-size: 15px;
+    }
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #4CB5AE;
+    }
+    th{
+        display: none;
+    }
+}
+@media(max-height:550px){
+    body{
+        font-size: 10px;
+    }
+    .content{
+        height: 500px;
+    }
+}
