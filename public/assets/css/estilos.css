@@ -6,6 +6,10 @@ html, body {
    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
 }
 
+.pag-construccion{
+    background: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s5958a1244f0516cc/image/i865102ff69008c7b/version/1469708974/image.png') no-repeat;
+}
+
 .banner {
     height: 60vh;
     background: url('../images/fondo.jpg');
