@@ -1,11 +1,13 @@
+
 html, body {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Grandstander', cursive;
+   /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
 }
 
 .banner {
-    height: 75vh;
+    height: 60vh;
     background: url('../images/fondo.jpg');
     background-size: cover;
     background-position: center;
@@ -17,23 +19,26 @@ html, body {
 }
 
 .banner h1 {
-    font-size: 70px;
+    font-size: 4em;
     margin: 0px;
+    color: #32de8a;
 }
 
-.banner p {
-    font-size: 24px;
+.banner h4 {
+    font-size: 1.2em;
 }
 
 .title {
     text-align: center;
     font-size: 3em;
+    color:  #4CB5AE;
 }
 
 .section .section-article {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 0em 1.5em;
 }
 
 .section .section-article .card {
@@ -43,6 +48,12 @@ html, body {
     padding: 5px;
     text-align: center;
     position: relative;
+}
+
+.card .card-servicio{
+    font-size: 1.2em;
+    color:  #4CB5AE;
+    font-weight: 600;
 }
 
 .card .fas {
@@ -63,9 +74,14 @@ html, body {
     padding: 1.5%;
 }
 
+a:visited, a.card-info{
+    color: #000;
+    font-weight: 600;
+}
+
 .container-about {
-    background-color: #e2dcde;
     padding-top: 8px;
+    /*background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);*/
 }
 
 .container-about .section.article .about {
@@ -78,6 +94,9 @@ html, body {
     min-width: 250px;
     margin: 5px;
     justify-content: space-evenly;
+    border: 2px solid #4CB5AE;
+    border-radius: 1em;
+    padding: 8px;
 }
 
 .imagen {
@@ -92,6 +111,7 @@ html, body {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-align: center;
+    color: #2A4494;
 }
 
 .texto {
@@ -114,6 +134,27 @@ html, body {
 
 .redes .fab.fa-whatsapp {
     color: #32de8a;
+}
+
+.social .fab.fa-whatsapp-square, .social .fab.fa-facebook-square {
+    color: #4CB5AE;
+}
+
+.social {
+    text-align: center;
+    font-size: 3em;    
+}
+
+.footer-pagina {
+    padding: 15px;
+    background-color: #122c34;
+}
+
+.footer-pagina .ubicacion, .horario{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-top: 8px;
 }
 
 @media(max-width:900px) {
@@ -150,6 +191,9 @@ html, body {
     }
     th {
         display: none;
+    }
+    .section .section-article .card {
+        width: 17em;
     }
 }
 
