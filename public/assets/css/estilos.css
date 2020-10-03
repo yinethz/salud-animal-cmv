@@ -3,11 +3,38 @@ html, body {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Grandstander', cursive;
+    font-size: 16px;
    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    position: relative;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 1em;
+    padding: 10px;
+}
+
+
 .pag-construccion{
     background: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s5958a1244f0516cc/image/i865102ff69008c7b/version/1469708974/image.png') no-repeat;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color:  #4CB5AE;
+}
+
+.texto {
+    text-align: justify;
 }
 
 .banner {
@@ -32,11 +59,20 @@ html, body {
     font-size: 1.2em;
 }
 
-.title {
-    text-align: center;
-    font-size: 3em;
-    color:  #4CB5AE;
+nav.menu-sticky{
+    position: sticky;
+    background-color: #32DE8A;
+    width: 100%;
+    top: -1px;
+    z-index: 99;    
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);    
 }
+
+
 
 .section .section-article {
     display: flex;
@@ -46,12 +82,19 @@ html, body {
 }
 
 .section .section-article .card {
-    width: 22em;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 30%;
     padding: 5px;
     text-align: center;
     position: relative;
+}
+
+.card .card-body {
+    position: relative;
+    border: 2px solid #4CB5AE;
+    border-radius: 1em;
+    top: -0.8em;
+    padding: 0px 8px 8px 8px;
+    min-height: 10em;
 }
 
 .card .card-servicio{
@@ -70,13 +113,6 @@ html, body {
     min-width: 1.5em;
 }
 
-.card-body {
-    position: relative;
-    border: 2px solid #4CB5AE;
-    border-radius: 1em;
-    top: -0.8em;
-    padding: 1.5%;
-}
 
 a:visited, a.card-info{
     color: #000;
@@ -94,16 +130,15 @@ a:visited, a.card-info{
 
 .about {
     text-align: center;
-    max-width: 30%;
-    min-width: 250px;
-    margin: 5px;
+    width: 30%;
+    margin: 13px;
     justify-content: space-evenly;
     border: 2px solid #4CB5AE;
     border-radius: 1em;
     padding: 8px;
 }
 
-.imagen {
+.imagen-funcionario {
     max-width: 15em;
     max-height: 10em;
     min-width: 8em;
@@ -111,21 +146,54 @@ a:visited, a.card-info{
     border-radius: 15em;
 }
 
-.cargo {
+.cargo-funcionario {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-align: center;
     color: #2A4494;
 }
 
-.texto {
+/*Sección de servicios*/
+
+.container .section .section-servicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-servicios{
+    border: 2px solid #4CB5AE;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1em;
+    width: 40%;
+}
+
+.card-servicios figure{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.card-servicios figure .imagen-servicios{
+    max-height: 17em;
+    border-radius: 1em;
+    width: 45%;
+    margin-right: 15px;
+}
+
+.card-servicios figure figcaption{
+    width: 50%;
     text-align: justify;
 }
+
+
 
 .redes {
     position: fixed;
     /*flotante*/
-    bottom: 50px;
+    bottom: 2em;
     right: 1px;
     z-index: 1;
     /*sobre todos los elementos hermanos*/
@@ -161,82 +229,83 @@ a:visited, a.card-info{
     padding-top: 8px;
 }
 
-/*Sección de servicios*/
-
-.container .section .section-servicio{
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-}
-
-.card-servicios{
-    border: 2px solid #4CB5AE;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 1em;
-}
-.card-servicios figure{
-    display: flex;
-    flex-wrap: wrap;
-}
-.card-servicios figure .imagen-servicios{
-    max-height: 17em;
-    border-radius: 1em;
-    width: 50%;
-    margin-right: 15px;
-}
-
-.card-servicios figure figcaption{
-    width: 48%;
-}
-
-
-@media(max-width:900px) {
+@media(max-width:769px) {
     body {
-        font-size: 20px;
+        font-size: 15px;
     }
-    th {
-        display: table-cell;
+    .section .section-article .card {
+        width: 45%;
     }
-    td {
-        width: auto;
-        display: table-cell;
+    .card .card-body {
+        min-height: 11em;
     }
-    td:nth-of-type(1) {
-        font-size: 1.8em;
+    .card-servicios{
+        width: 70%;
     }
-
+    
+    .card-servicios figure .imagen-servicios{
+        max-height: 17em;
+        border-radius: 1em;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+    .card-servicios figure figcaption{
+        width: 100%;
+        text-align: justify;
+    }
+    .about {
+        text-align: center;
+        width: 40%;
+    }
 }
 
 @media(max-width:600px) {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
-    .content {
-        padding: 1em;
+    nav.menu-sticky li{
+        font-size: 0.9em;
     }
-    td {
-        display: block;
+    .card .card-body {
+        min-height: auto;
+    } 
+    .card-servicios figure .imagen-servicios{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .card-servicios figure figcaption{
         width: 100%;
     }
-    td:nth-of-type(1) {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: #4CB5AE;
+    .card-servicios{
+        width: 80%;
     }
-    th {
-        display: none;
-    }
-    .section .section-article .card {
-        width: 17em;
+
+    .about{
+        width: 95%;
     }
 }
 
-@media(max-height:550px) {
+
+@media(max-width:550px) {
     body {
-        font-size: 10px;
+        font-size: 13px;
     }
-    .content {
-        height: 500px;
+    nav.menu-sticky li{
+        font-size: 0.8em;
+    }
+    .section .section-article .card {
+        width: 95%;
     }
 }
+
+@media(max-width:380px) {
+    body {
+        font-size: 11px;
+    }
+    nav.menu-sticky li{
+        font-size: 0.8em;
+    }
+}
+
