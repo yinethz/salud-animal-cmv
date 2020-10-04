@@ -39,7 +39,7 @@ nav li{
 
 .banner {
     height: 60vh;
-    background: url('../images/fondo.jpg');
+    background: url('../images/logo.png');
     background-size: cover;
     background-position: center;
     padding: 2em;
@@ -51,6 +51,11 @@ nav li{
 
 .banner h1 {
     font-size: 4em;
+    margin: 0px;
+    color: #32de8a;
+}
+.banner h3 {
+    font-size: 1.9em;
     margin: 0px;
     color: #32de8a;
 }
