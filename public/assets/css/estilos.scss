@@ -31,7 +31,7 @@ nav li{
     color: $color-primario;
 }
 
-.texto {
+texto {
     text-align: justify;
 }
 
@@ -151,13 +151,39 @@ a:visited, a.card-info{
     border-radius: 15em;
 }
 
-.cargo-funcionario {
+.subtitulo-cargo {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-align: center;
     color: $color-secundario;
 }
 
+/*Quienes somos*/
+.container-cmv .section .texto-cmv{
+    display: flex;
+    margin: 60px;
+}
+
+hr {
+    height: 1px;
+    background-color: $color-secundario;
+  }
+
+  .container-cmv .section .about-cmv{
+      margin: 60px;
+  }
+
+  .container-cmv .section .subtitulo-cmv{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #00A4E9;
+    font-size: 2.0em;
+  }
+
+  .container-cmv .section .fas.fa-paw{
+      color: #000;
+  }
 /*Sección de servicios*/
 
 .container .section .section-servicio{
@@ -261,6 +287,10 @@ a:visited, a.card-info{
         text-align: center;
         width: 40%;
     }
+    .container-cmv .section .texto-cmv{
+        display: flex;
+        margin: 40px;
+    }
 }
 
 @media(max-width:600px) {
@@ -288,6 +318,10 @@ a:visited, a.card-info{
     .about{
         width: 95%;
     }
+    .container-cmv .section .texto-cmv{
+        display: flex;
+        margin: 30px;
+    }
 }
 
 @media(max-width:550px) {
@@ -300,6 +334,10 @@ a:visited, a.card-info{
     .section .section-article .card {
         width: 95%;
     }
+    .container-cmv .section .texto-cmv{
+        display: flex;
+        margin: 25px;
+    }
 }
 
 @media(max-width:380px) {
@@ -309,5 +347,13 @@ a:visited, a.card-info{
     nav.menu-sticky li{
         font-size: 0.8em;
     }
+    .container-cmv .section .texto-cmv{
+        display: flex;
+        margin: 25px;
+    }
+    .container-cmv .section .about-cmv{
+        margin: 10px;
+    }
+  
 }
 
