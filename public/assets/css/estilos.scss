@@ -219,6 +219,13 @@ hr {
     text-align: justify;
 }
 
+/*Contactenos*/
+.mapa{
+    margin-top: 8px;
+    width: 100%; 
+    height: 350px;
+}
+
 .redes {
     position: fixed;
     /*flotante*/
@@ -290,6 +297,10 @@ hr {
     .container-cmv .section .texto-cmv{
         display: flex;
         margin: 40px;
+    }
+    .container-about .mapa{
+        margin-top: 5px;
+        width: 100%; 
     }
 }
 
